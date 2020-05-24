@@ -1,0 +1,10 @@
+# Workspace folders
+.DS_Store
+.vscode
+
+# node.js files & folders
+/node_modules/
+/src/node_modules/@sapper/
+yarn-error.log
+/cypress/screenshots/
+/__sapper__/
