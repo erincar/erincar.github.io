@@ -1,6 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import Nav from '../components/Nav.svelte';
+    import Footer from '../components/Footer.svelte';
     export let segment;
     onMount(() => {
         console.log(segment);
@@ -39,3 +40,4 @@
     <slot></slot>
     </div>
 </main>
+<Footer/>
