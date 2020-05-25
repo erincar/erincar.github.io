@@ -13,7 +13,7 @@
         flex-grow: 0;
 
         /* Layout */
-        padding: 0 1em;
+        padding: 0 2em;
         justify-content: center;
     }
 
@@ -33,31 +33,26 @@
     }
 
     [aria-current]::after {
-        position: absolute;
-        content: '';
-        width: calc(100% - 1em);
-        height: 2px;
-        background-color: rgb(255,62,0);
-        display: block;
-        bottom: -1px;
     }
 
     a {
         text-decoration: none;
-        padding: 1em 0.5em;
+        padding: 0.6em 0.8em;
         display: block;
     }
 </style>
 
 <nav>
     <ul>
+        {#each [undefined, "works", "collections"] as route}
         <li>
             <a
-                aria-current='{segment === undefined ? "page" : undefined}'
-                href='.'
+                aria-current='{segment === route ? "page" : undefined}'
+                href={route === undefined ? '.' : route}
             >
-                home
+                {route === undefined ? 'home' : route}
             </a>
         </li>
+        {/each}
     </ul>
 </nav>

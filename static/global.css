@@ -36,6 +36,7 @@ body {
     overflow: auto;
 
     /* Appearance */
+    border-radius: 0.2rem;
     background-color: rgba(215, 200, 226, 0.720);
 }
 

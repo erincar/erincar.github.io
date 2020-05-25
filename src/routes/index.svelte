@@ -6,9 +6,10 @@
 </style>
 
 <svelte:head>
-    <title>Sapper project template</title>
+    <title>erinc</title>
 </svelte:head>
 
+<h1>erinc</h1>
 
 <p>
 Gingerbread tiramisu toffee. Tart danish sweet icing cupcake. Cheesecake gingerbread ice cream apple pie cake cake. Gingerbread candy carrot cake jelly-o marzipan cheesecake marzipan. Ice cream jujubes ice cream gummies macaroon. Cookie cookie candy. Gingerbread bear claw dessert tootsie roll chupa chups apple pie donut cookie brownie. Carrot cake soufflé jujubes. Chupa chups topping jelly beans cookie lollipop danish. Powder chocolate bar powder tootsie roll powder. Pudding muffin cheesecake donut soufflé gummies. Dessert pudding bonbon cake chocolate carrot cake candy sugar plum. Dessert cupcake chocolate cake chocolate bar caramels oat cake chocolate bar. Marshmallow sweet roll tiramisu jelly beans halvah jelly beans.
