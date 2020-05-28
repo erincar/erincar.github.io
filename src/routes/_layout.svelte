@@ -14,10 +14,22 @@
         height: 100%;
         position: absolute;
         z-index: -1;
-        background: url("svelte-192.png") repeat left top;
+    }
+
+    #background-slider {
+        width: calc(100% + 12em);
+        height: 100%;
         background-size: 6em;
-        filter: blur(4px);
-        -webkit-filter: blur(4px);
+        animation: slide 6s linear infinite;
+    }
+
+    @keyframes slide{
+        0%{
+            transform: translate3d(-6em, 0, 0);
+        }
+        100%{
+            transform: translate3d(-12em, 0, 0);
+        }
     }
 
     main {
