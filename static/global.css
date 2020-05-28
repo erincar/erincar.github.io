@@ -37,7 +37,9 @@ body {
 
     /* Appearance */
     border-radius: 0.2rem;
-    background-color: rgba(215, 200, 226, 0.720);
+    background-color: rgba(235, 235, 235, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 
 .route-container > * {
