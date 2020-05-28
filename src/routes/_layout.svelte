@@ -19,8 +19,10 @@
     #background-slider {
         width: calc(100% + 12em);
         height: 100%;
+        background: url("90527-dij.jpg") repeat left top;
         background-size: 6em;
         animation: slide 6s linear infinite;
+        filter: contrast(100) invert(100%) brightness(0.3);
     }
 
     @keyframes slide{
@@ -45,9 +47,9 @@
     }
 </style>
 
-<div id="background"></div>
 <Nav {segment}/>
 <main>
+    <div id="background"><div id="background-slider"></div></div>
     <div class="route-container">
     <slot></slot>
     </div>
