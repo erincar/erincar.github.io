@@ -6,7 +6,8 @@
 <style>
     nav {
         /* Appearance */
-        border-bottom: 1px solid rgba(255,62,0,0.1);
+        background: rgba(49, 202, 230, 0.5);
+        border-bottom: 1px solid rgba(49, 202, 230, 0.8);
         font-weight: 300;
 
         /* Placement */
@@ -31,9 +32,7 @@
     [aria-current] {
         position: relative;
         display: inline-block;
-    }
-
-    [aria-current]::after {
+        background-color: blanchedalmond;
 }
 
     a {
