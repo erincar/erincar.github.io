@@ -1,5 +1,6 @@
 <script>
     export let segment;
+    const index_title = 'home';
 </script>
 
 <style>
@@ -33,7 +34,7 @@
     }
 
     [aria-current]::after {
-    }
+}
 
     a {
         text-decoration: none;
@@ -44,13 +45,13 @@
 
 <nav>
     <ul>
-        {#each [undefined, "works", "collections"] as route}
+        {#each [undefined, "about", "works", "collections", "blog"] as route}
         <li>
             <a
                 aria-current='{segment === route ? "page" : undefined}'
                 href={route === undefined ? '.' : route}
             >
-                {route === undefined ? 'home' : route}
+                {route === undefined ? index_title : route}
             </a>
         </li>
         {/each}
