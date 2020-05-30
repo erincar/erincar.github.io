@@ -47,9 +47,9 @@
     }
 </style>
 
+<div id="background"><div id="background-slider"></div></div>
 <Nav {segment}/>
 <main>
-    <div id="background"><div id="background-slider"></div></div>
     <div class="route-container">
     <slot></slot>
     </div>

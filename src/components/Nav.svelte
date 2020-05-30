@@ -6,17 +6,15 @@
 <style>
     nav {
         /* Appearance */
-        background: rgba(49, 202, 230, 0.5);
-        border-bottom: 1px solid rgba(49, 202, 230, 0.8);
-        font-weight: 300;
+        background: transparent;
 
         /* Placement */
         display: inline-flex;
         flex-grow: 0;
 
         /* Layout */
-        padding: 0 2em;
-        justify-content: center;
+        padding: 0 5em;
+        justify-content: right;
     }
 
     ul {
@@ -32,13 +30,25 @@
     [aria-current] {
         position: relative;
         display: inline-block;
-        background-color: blanchedalmond;
+        border-bottom: 2px solid rgba(226, 90, 90, 0.8);
 }
 
     a {
-        text-decoration: none;
-        padding: 0.6em 0.8em;
+        /* Placement */
         display: block;
+
+        /* Layout */
+        padding: 0.6em 0.8em;
+
+        /* Typography */
+        text-decoration: none;
+        font-weight: 500;
+        color: white;
+    }
+
+    a:visited {
+        font-weight: 300;
+        color: rgba(211, 211, 211, 0.8);
     }
 </style>
 
