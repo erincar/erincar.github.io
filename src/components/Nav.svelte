@@ -14,7 +14,7 @@
 
         /* Layout */
         padding: 0 5em;
-        justify-content: right;
+        justify-content: space-between;
     }
 
     ul {
@@ -23,8 +23,12 @@
     }
 
     li {
+        /* Placement */
         display: block;
         float: left;
+
+        /* Layout */
+        padding: 0.6em 0.8em;
     }
 
     [aria-current] {
@@ -35,10 +39,6 @@
 
     a {
         /* Placement */
-        display: block;
-
-        /* Layout */
-        padding: 0.6em 0.8em;
 
         /* Typography */
         text-decoration: none;
@@ -53,6 +53,12 @@
 </style>
 
 <nav>
+    <ul>
+        {#each ["spotify", "pinterest", "twitter"] as profile}
+        <li>{profile}</li>
+        {/each}
+    </ul>
+
     <ul>
         {#each [undefined, "about", "works", "collections", "blog"] as route}
         <li>
