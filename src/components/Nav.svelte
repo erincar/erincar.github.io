@@ -60,7 +60,7 @@
     </ul>
 
     <ul>
-        {#each [undefined, "about", "works", "collections", "blog"] as route}
+        {#each [undefined, "about", "works", "blog"] as route}
         <li>
             <a
                 aria-current='{segment === route ? "page" : undefined}'
