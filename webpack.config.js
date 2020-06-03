@@ -13,7 +13,9 @@ const extensions = ['.mjs', '.js', '.json', '.svelte', '.html'];
 const mainFields = ['svelte', 'module', 'browser', 'main'];
 
 const preprocessors = [
-    sveltePreprocess.less({}),
+    sveltePreprocess.less({
+        paths: [path.resolve(__dirname, "src", "less")],
+    }),
 ];
 
 module.exports = {

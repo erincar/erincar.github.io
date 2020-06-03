@@ -1,5 +1,5 @@
 <style lang="less">
-    @import "src/less/variables.less";
+    @import "variables.less";
     h1 {
         color: @my-color;
     }
