@@ -14,10 +14,12 @@
 - [x] Resolve `src/less` path
 - [ ] ~~Compile `<style lang="less>` without the lang specification~~
 - [ ] Add VSCode support for Svelte & LESS
+- [ ] Add hot reloading for LESS files
 - [ ] Create global less files that can be used without import
 - [ ] Convert styles into LESS
 - [ ] Set & use color theme
 - [ ] Responsive Design
+- [ ] Contribute & use Svelma
 - [ ] Use icons
 
 ### Content
