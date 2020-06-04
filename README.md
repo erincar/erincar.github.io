@@ -10,16 +10,15 @@
 
 ### Style
 
-- [x] Add LESS support
-- [x] Resolve `src/less` path
-- [ ] ~~Compile `<style lang="less>` without the lang specification~~
-- [ ] Add VSCode support for Svelte & LESS
-- [ ] Add hot reloading for LESS files
-- [ ] Create global less files that can be used without import
-- [ ] Convert styles into LESS
+- [ ] Remove LESS & Add PostCSS support
+- [ ] Resolve `src/postcss` path
+- [ ] Add VSCode support for Svelte & PostCSS
+- [ ] Add hot reloading for PostCSS files
+- [ ] Create global PostCSS files that can be used without import
+- [ ] Convert styles into PostCSS
 - [ ] Set & use color theme
 - [ ] Responsive Design
-- [ ] Contribute & use Svelma
+- [ ] Add Tailwind CSS into project
 - [ ] Use icons
 
 ### Content
