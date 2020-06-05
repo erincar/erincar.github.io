@@ -1,8 +1,4 @@
-<style lang="less">
-    @import "variables.less";
-    h1 {
-        color: @my-color;
-    }
+<style>
 </style>
 
 <svelte:head>

@@ -5,6 +5,7 @@ const pkg = require('./package.json');
 
 const sveltePreprocess = require('svelte-preprocess');
 
+
 const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 
@@ -12,11 +13,9 @@ const alias = { svelte: path.resolve('node_modules', 'svelte') };
 const extensions = ['.mjs', '.js', '.json', '.svelte', '.html'];
 const mainFields = ['svelte', 'module', 'browser', 'main'];
 
-const preprocessors = [
-    sveltePreprocess.less({
-        paths: [path.resolve(__dirname, "src", "less")],
-    }),
-];
+const preprocess = sveltePreprocess({
+    postcss: true,
+});
 
 module.exports = {
     client: {
@@ -30,7 +29,7 @@ module.exports = {
                     use: {
                         loader: 'svelte-loader',
                         options: {
-                            preprocess: preprocessors,
+                            preprocess,
                             dev,
                             hydratable: true,
                             hotReload: false
@@ -62,7 +61,7 @@ module.exports = {
                     use: {
                         loader: 'svelte-loader',
                         options: {
-                            preprocess: preprocessors,
+                            preprocess,
                             css: false,
                             generate: 'ssr',
                             dev

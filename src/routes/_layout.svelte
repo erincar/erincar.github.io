@@ -1,4 +1,5 @@
 <script>
+    import GlobalStyle from '../components/GlobalStyle.svelte';
     import Nav from '../components/Nav.svelte';
     export let segment;
 </script>
@@ -41,6 +42,7 @@
         overflow: auto;
     }
 </style>
+<GlobalStyle/>
 
 <div id="background"><div id="background-slider"></div></div>
 <Nav {segment}/>
