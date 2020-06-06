@@ -16,6 +16,7 @@
 - [x] Convert styles into TailwindCSS
 - [x] Use icons
 - [x] Color icons on hover
+- [ ] Separate links and internal navigation
 - [ ] Handle component events
 - [ ] Add animations
 - [ ] Set & use color theme, font theme
@@ -24,6 +25,7 @@
 ### Content
 
 - [x] External links
+- [ ] CV
 - [ ] Work samples
 - [ ] GitHub-hosted blog?
 - [ ] Contact links
