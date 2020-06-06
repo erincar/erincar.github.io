@@ -18,16 +18,16 @@
     const index_title = 'home';
     const external_links = {
         'linkedin': ['https://www.linkedin.com/in/erincar/', faLinkedin],
-        'twitter': ['https://twitter.com/yosuntutan', faTwitter],
-        'soundcloud': ['https://soundcloud.com/yosuntutan/', faSoundcloud],
         'github': ['https://github.com/erincar', faGithub],
         'stack overflow': ['https://stackoverflow.com/users/8145608/erincar', faStackOverflow],
-        'dev.to': ['https://dev.to/erincar', faDev],
-        'VSCO': ['https://vsco.co/yosuntutan/', null],
+        'dev.to': ['https://dev.to/erincar', faDev, true],
         'itch.io': ['https://itch.io/profile/erincar', faItchIo],
+        'soundcloud': ['https://soundcloud.com/yosuntutan/', faSoundcloud],
+        'VSCO': ['https://vsco.co/yosuntutan/', null],
         'deviantart': ['https://www.deviantart.com/erincar', faDeviantart],
         'behance': ['https://www.behance.net/erincar', faBehance],
-        'dribbble': ['https://dribbble.com/erincar', faDribbble],
+        'dribbble': ['https://dribbble.com/erincar', faDribbble, true],
+        'twitter': ['https://twitter.com/yosuntutan', faTwitter],
         'spotify': ['https://open.spotify.com/user/yosuntutan', faSpotify],
         'pinterest': ['https://tr.pinterest.com/erincarg/', faPinterest],
     };
@@ -56,14 +56,19 @@
 
     li {
         /* Placement */
-        @apply block float-left;
+        @apply block float-left h-full;
 
         /* Layout */
-        @apply px-3 py-1;
+        @apply px-1 py-1;
 
         & > [aria-current] {
             /* Appearance */
             @apply border-b-2 border-solid border-red-600 border-opacity-75;
+        }
+
+        & > .separator {
+            @apply inline-block mx-3 h-full bg-current;
+            width: 0.05rem;
         }
     }
 
@@ -102,7 +107,7 @@
 
 <nav>
     <ul>
-        {#each Object.entries(external_links) as [name, [url, icon]]}
+        {#each Object.entries(external_links) as [name, [url, icon, ...separator]]}
         <li><a href={url}>
             {#if icon}
                 <Icon icon={icon}/>
@@ -112,6 +117,9 @@
                 </svg>
             {/if}
         </a></li>
+        {#if separator.length > 0}
+            <li><div class="separator"></div></li>
+        {/if}
         {/each}
     </ul>
 
