@@ -15,7 +15,7 @@
 - [x] Add Tailwind CSS into project
 - [x] Convert styles into TailwindCSS
 - [x] Use icons
-- [ ] Color icons on hover
+- [x] Color icons on hover
 - [ ] Handle component events
 - [ ] Add animations
 - [ ] Set & use color theme, font theme
