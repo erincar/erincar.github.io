@@ -6,7 +6,7 @@
 
 <style>
     :root {
-        --bg-size: 50vh;
+        --bg-size: calc(100vh/3);
     }
     #background {
         /* Placement */
