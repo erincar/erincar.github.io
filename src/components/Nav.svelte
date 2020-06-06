@@ -1,61 +1,117 @@
 <script>
-    export let segment;
+    import Icon from 'fa-svelte';
+    import {
+        faBehance,
+        faDev,
+        faDeviantart,
+        faDribbble,
+        faGithub,
+        faItchIo,
+        faLinkedin,
+        faPinterest,
+        faSoundcloud,
+        faSpotify,
+        faStackOverflow,
+        faTwitter,
+    } from '@fortawesome/free-brands-svg-icons';
+
     const index_title = 'home';
+    const external_links = {
+        'linkedin': ['https://www.linkedin.com/in/erincar/', faLinkedin],
+        'twitter': ['https://twitter.com/yosuntutan', faTwitter],
+        'soundcloud': ['https://soundcloud.com/yosuntutan/', faSoundcloud],
+        'github': ['https://github.com/erincar', faGithub],
+        'stack overflow': ['https://stackoverflow.com/users/8145608/erincar', faStackOverflow],
+        'dev.to': ['https://dev.to/erincar', faDev],
+        'VSCO': ['https://vsco.co/yosuntutan/', null],
+        'itch.io': ['https://itch.io/profile/erincar', faItchIo],
+        'deviantart': ['https://www.deviantart.com/erincar', faDeviantart],
+        'behance': ['https://www.behance.net/erincar', faBehance],
+        'dribbble': ['https://dribbble.com/erincar', faDribbble],
+        'spotify': ['https://open.spotify.com/user/yosuntutan', faSpotify],
+        'pinterest': ['https://tr.pinterest.com/erincarg/', faPinterest],
+    };
+
+    export let segment;
 </script>
 
 <style>
     nav {
-        /* Appearance */
-        background: transparent;
-
         /* Placement */
-        display: inline-flex;
-        flex-grow: 0;
+        @apply inline-flex flex-grow-0 z-10;
 
         /* Layout */
-        padding: 0 5em;
-        justify-content: space-between;
+        @apply px-20 py-0 justify-between;
+
+        /* Appearance */
+        @apply bg-transparent;
+
+        /* Typography */
+        @apply text-2xl text-gray-400;
     }
 
     ul {
-        margin: 0;
-        padding: 0;
+        @apply m-0 p-0;
     }
 
     li {
         /* Placement */
-        display: block;
-        float: left;
+        @apply block float-left;
 
         /* Layout */
-        padding: 0.6em 0.8em;
+        @apply px-3 py-1;
+
+        & > [aria-current] {
+            /* Appearance */
+            @apply border-b-2 border-solid border-red-600 border-opacity-75;
+        }
     }
 
-    [aria-current] {
-        position: relative;
-        display: inline-block;
-        border-bottom: 2px solid rgba(226, 90, 90, 0.8);
-}
-
-    a {
-        /* Placement */
+    a, a:visited {
+        /* Layout */
+        @apply p-0;
 
         /* Typography */
-        text-decoration: none;
-        font-weight: 500;
-        color: white;
+        @apply font-medium no-underline;
+
+        &:hover {
+            @apply font-normal text-gray-100 text-opacity-100;
+            & :global(svg) {
+                @apply text-red-600;
+                @keyframes external-enthusiasm {
+                    0%{
+                        transform: rotateY(0);
+                    }
+                    50% {
+                        transform: rotateY(180deg);
+                    }
+                    100%{
+                        transform: rotateY(360deg);
+                    }
+                }
+                animation: external-enthusiasm 0.35s ease-in-out 0s 1 normal;
+            }
+        }
     }
 
-    a:visited {
-        font-weight: 300;
-        color: rgba(211, 211, 211, 0.8);
+    .custom-svg {
+        @apply w-6 h-6 overflow-visible inline-block;
+        @apply fill-current;
     }
 </style>
 
 <nav>
     <ul>
-        {#each ["spotify", "pinterest", "twitter"] as profile}
-        <li>{profile}</li>
+        {#each Object.entries(external_links) as [name, [url, icon]]}
+        <li><a href={url}>
+            {#if icon}
+                <Icon icon={icon}/>
+            {:else}
+                <svg class="custom-svg">
+                    <use xlink:href='{name}.svg#Layer_1'>{name}</use>
+                </svg>
+            {/if}
+        </a></li>
         {/each}
     </ul>
 

@@ -10,21 +10,21 @@
 
 ### Style
 
-- [ ] Remove LESS & Add PostCSS support
-- [ ] Resolve `src/postcss` path
-- [ ] Add VSCode support for Svelte & PostCSS
-- [ ] Add hot reloading for PostCSS files
-- [ ] Create global PostCSS files that can be used without import
-- [ ] Convert styles into PostCSS
-- [ ] Set & use color theme
-- [ ] Responsive Design
-- [ ] Add Tailwind CSS into project
-- [ ] Use icons
+- [x] Remove LESS & Add PostCSS support
+- [x] Create global styles that can be used without import
+- [x] Add Tailwind CSS into project
+- [x] Convert styles into TailwindCSS
+- [x] Use icons
+- [ ] Color icons on hover
+- [ ] Handle component events
+- [ ] Add animations
+- [ ] Set & use color theme, font theme
+- [ ] Implement responsive Design
 
 ### Content
 
-- [ ] Contact links
-- [ ] External links
+- [x] External links
 - [ ] Work samples
 - [ ] GitHub-hosted blog?
+- [ ] Contact links
 - [ ] Other content
