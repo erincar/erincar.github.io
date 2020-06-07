@@ -1,12 +1,14 @@
 <script>
     import Icon from 'fa-svelte';
     import {
+        faArtstation,
         faBehance,
         faDev,
         faDeviantart,
         faDribbble,
         faGithub,
         faItchIo,
+        faKaggle,
         faLinkedin,
         faPinterest,
         faSoundcloud,
@@ -19,14 +21,16 @@
     const external_links = {
         'linkedin': ['https://www.linkedin.com/in/erincar/', faLinkedin],
         'github': ['https://github.com/erincar', faGithub],
-        'stack overflow': ['https://stackoverflow.com/users/8145608/erincar', faStackOverflow],
-        'dev.to': ['https://dev.to/erincar', faDev, true],
-        'itch.io': ['https://itch.io/profile/erincar', faItchIo],
-        'soundcloud': ['https://soundcloud.com/yosuntutan/', faSoundcloud],
+        'dribbble': ['https://dribbble.com/erincar', faDribbble],
         'VSCO': ['https://vsco.co/yosuntutan/', null],
+        'soundcloud': ['https://soundcloud.com/yosuntutan/', faSoundcloud],
+        'itch.io': ['https://itch.io/profile/erincar', faItchIo, true],
+        'stack overflow': ['https://stackoverflow.com/users/8145608/erincar', faStackOverflow],
+        'dev.to': ['https://dev.to/erincar', faDev],
+        'kaggle': ['https://www.kaggle.com/erincar', faKaggle, true],
+        'artstation': ['https://www.artstation.com/erincar', faArtstation],
         'deviantart': ['https://www.deviantart.com/erincar', faDeviantart],
-        'behance': ['https://www.behance.net/erincar', faBehance],
-        'dribbble': ['https://dribbble.com/erincar', faDribbble, true],
+        'behance': ['https://www.behance.net/erincar', faBehance, true],
         'twitter': ['https://twitter.com/yosuntutan', faTwitter],
         'spotify': ['https://open.spotify.com/user/yosuntutan', faSpotify],
         'pinterest': ['https://tr.pinterest.com/erincarg/', faPinterest],
@@ -59,7 +63,7 @@
         @apply block float-left h-full;
 
         /* Layout */
-        @apply px-1 py-1;
+        @apply px-2 py-1;
 
         & > [aria-current] {
             /* Appearance */
