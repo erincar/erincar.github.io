@@ -11,6 +11,9 @@
         /* Layout */
         @apply overflow-hidden;
 
+        /* Appearance */
+        background-color: rgb(72, 72, 72);
+
         /* Typography */
         @apply text-black text-base leading-normal;
     }

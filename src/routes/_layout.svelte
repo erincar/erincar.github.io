@@ -1,97 +1,34 @@
 <script>
     import GlobalStyle from '../components/GlobalStyle.svelte';
+    import Background from '../components/Background.svelte';
     import Nav from '../components/Nav.svelte';
     export let segment;
 </script>
 
 <style>
-    :root {
-        --bg-size: calc(100vh/3);
-    }
-    .background {
-        /* Placement */
-        @apply w-1/2 h-full absolute top-0 z-0;
-
-        @keyframes slide {
-            0%{
-                background-position-x: 0;
-            }
-            100%{
-                background-position-x: var(--bg-size);
-            }
-        }
-
-        @keyframes color-frenzy {
-            0%{
-                filter: contrast(80%)
-                brightness(0.8) invert(100%)
-                hue-rotate(20deg) saturate(0);
-            }
-            100%{
-                filter: contrast(80%)
-                brightness(0.8) invert(100%)
-                hue-rotate(40deg) saturate(200);
-            }
-        }
-
-        & > .slider {
-            /* Placement */
-            @apply h-full absolute top-0 overflow-hidden;
-            width: calc(4*var(--bg-size));
-
-            /* Appearance */
-            background: url("90527-dij.jpg") repeat left top;
-            background-size: var(--bg-size);
-            animation:
-                slide 2s ease-in-out infinite normal,
-                color-frenzy 2s ease infinite alternate;
-        }
-
-        &.left {
-            @apply left-0;
-
-            & > .slider {
-                @apply right-0;
-            }
-
-        }
-
-        &.right {
-            @apply right-0;
-
-            & > .slider {
-                @apply left-0;
-                animation:
-                slide 2s ease-in-out infinite reverse,
-                color-frenzy 2s ease infinite alternate;
-            }
-        }
-    }
-
     main {
         /* Placement */
         @apply m-0 box-border flex-grow z-10;
 
         /* Layout */
         @apply px-0 overflow-auto inline-flex;
-        @screen sm { @apply px-10; }
-        @screen lg { @apply px-20; }
     }
 
     .route-container{
         /* Placement */
         @apply m-0 h-full max-h-full w-full box-border;
+        @screen sm { @apply mx-10; }
+        @screen lg { @apply mx-20; }
 
         /* Layout */
         @apply py-4 px-8 overflow-auto;
 
         /* Appearance */
-        @apply rounded bg-gray-200 bg-opacity-50;
+        @apply rounded bg-gray-100 bg-opacity-25;
         backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4px);
 
         /* Typography */
-        @apply text-gray-800;
+        @apply text-black;
 
         & > * {
             @apply px-0 py-4;
@@ -100,10 +37,9 @@
 </style>
 <GlobalStyle/>
 
-<div class="background left"><div class="slider"></div></div>
-<div class="background right"><div class="slider"></div></div>
 <Nav {segment}/>
 <main>
+    <Background/>
     <div class="route-container">
     <slot></slot>
     </div>
