@@ -112,7 +112,7 @@
 <nav>
     <ul>
         {#each Object.entries(external_links) as [name, [url, icon, ...separator]]}
-        <li><a href={url}>
+        <li><a href={url} target="_blank">
             {#if icon}
                 <Icon icon={icon}/>
             {:else}
