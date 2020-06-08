@@ -16,11 +16,14 @@
 - [x] Convert styles into TailwindCSS
 - [x] Use icons
 - [x] Color icons on hover
-- [ ] Separate links and internal navigation
-- [ ] Handle component events
+- [x] Move external links to footer
+  - [ ] Make it collapsible on small screens
 - [ ] Add animations
+  - [ ] Section changes
 - [ ] Set & use color theme, font theme
+- [ ] Add custom scrollbar
 - [ ] Implement responsive Design
+- [ ] Handle component events
 
 ### Content
 
