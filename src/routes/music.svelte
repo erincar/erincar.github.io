@@ -2,5 +2,7 @@
 </style>
 
 <svelte:head>
-    <title>erinc</title>
+    <title>music</title>
 </svelte:head>
+
+<h1>music</h1>

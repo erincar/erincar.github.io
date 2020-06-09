@@ -2,7 +2,7 @@
 </style>
 
 <svelte:head>
-    <title>works</title>
+    <title>games</title>
 </svelte:head>
 
-<h1>works</h1>
+<h1>games</h1>

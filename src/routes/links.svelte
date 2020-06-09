@@ -2,7 +2,7 @@
 </style>
 
 <svelte:head>
-    <title>about</title>
+    <title>links</title>
 </svelte:head>
 
-<h1>about</h1>
+<h1>links</h1>

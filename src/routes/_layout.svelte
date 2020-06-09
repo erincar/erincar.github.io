@@ -2,6 +2,7 @@
     import GlobalStyle from '../components/GlobalStyle.svelte';
     import Background from '../components/Background.svelte';
     import Nav from '../components/Nav.svelte';
+    import Footer from '../components/Footer.svelte';
     export let segment;
 </script>
 
@@ -16,31 +17,38 @@
 
     .route-container{
         /* Placement */
-        @apply m-0 h-full max-h-full w-full box-border;
+        @apply m-0 w-full h-full box-border;
+
+        /* Layout */
+        @apply p-0 overflow-hidden;
+    }
+
+    .section-container {
+        /* Placement */
         @screen sm { @apply mx-10; }
         @screen lg { @apply mx-20; }
 
         /* Layout */
-        @apply py-4 px-8 overflow-auto;
+        @apply flex flex-col justify-center;
 
         /* Appearance */
         @apply rounded bg-gray-100 bg-opacity-25;
         backdrop-filter: blur(4px);
+        transition: background-opacity 2s ease-out 0.4s;
 
         /* Typography */
-        @apply text-black;
-
-        & > * {
-            @apply px-0 py-4;
-        }
+        @apply text-black text-3xl;
     }
 </style>
 <GlobalStyle/>
 
+<!-- <Background/> -->
 <Nav {segment}/>
 <main>
-    <Background/>
-    <div class="route-container">
-    <slot></slot>
+    <div
+        class="{segment === undefined ? '' : 'section-container '} route-container"
+    >
+        <slot></slot>
     </div>
 </main>
+<Footer/>
