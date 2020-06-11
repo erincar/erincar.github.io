@@ -51,4 +51,4 @@
         <slot></slot>
     </div>
 </main>
-<Footer/>
+<!-- <Footer/> -->

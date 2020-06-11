@@ -19,6 +19,6 @@
     }
 
     #sapper {
-        @apply flex flex-col h-full max-h-full w-full box-border;
+        @apply flex flex-row h-full max-h-full w-full box-border;
     }
 </style>
