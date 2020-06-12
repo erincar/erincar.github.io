@@ -27,7 +27,8 @@
         @apply px-20 py-0 justify-between;
 
         /* Appearance */
-        @apply bg-transparent;
+        /* @apply bg-transparent; */
+        @apply bg-blue-400;
 
         /* Typography */
         @apply text-2xl text-gray-400;
@@ -40,6 +41,10 @@
     li {
         /* Placement */
         @apply block h-full;
+
+        ul.contact-list & {
+            @apply float-left;
+        }
 
         /* Layout */
         @apply px-3 py-1;
@@ -64,7 +69,7 @@
 </style>
 
 <div class="main-container">
-    <ul>
+    <ul class="contact-list">
         {#each Object.entries(external_links) as [name, [url, icon]]}
         <li><a href={url} target="_blank">
             <Icon icon={icon}/>
