@@ -7,6 +7,7 @@
 - [x] Add & simplify Sapper template
 - [x] Add auto publish via GitHub Actions
 - [ ] Add tests and related actions
+- [ ] manifest.json
 
 ### Style
 
