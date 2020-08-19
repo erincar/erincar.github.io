@@ -91,5 +91,5 @@
             </li>
             {/each}
         </ul>
-</nav>
+    </nav>
 </div>
