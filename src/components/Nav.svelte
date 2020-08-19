@@ -30,7 +30,7 @@
         @apply bg-transparent;
 
         /* Typography */
-        @apply text-2xl text-gray-400;
+        @apply text-4xl text-gray-400;
     }
 
     ul {

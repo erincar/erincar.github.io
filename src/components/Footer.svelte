@@ -122,7 +122,7 @@
         @apply px-4 py-0 flex flex-row justify-center;
 
         /* Typography */
-        @apply text-2xl text-gray-400;
+        @apply text-4xl text-gray-400;
     }
 
     li {
