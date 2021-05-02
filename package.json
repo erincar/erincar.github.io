@@ -12,11 +12,11 @@
     "test": "run-p --race dev cy:run"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.2",
-    "@fortawesome/free-brands-svg-icons": "^5.15.2",
-    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@fortawesome/free-brands-svg-icons": "^5.15.3",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "compression": "^1.7.1",
-    "polka": "next",
+    "polka": "^1.0.0-next.14",
     "sirv": "^0.4.6"
   },
   "devDependencies": {
@@ -27,7 +27,7 @@
     "postcss-cli": "^7.1.2",
     "postcss-load-config": "^2.1.2",
     "sapper": "^0.27.16",
-    "svelte": "^3.34.0",
+    "svelte": "^3.38.1",
     "svelte-loader": "^2.9.0",
     "svelte-preprocess": "^3.9.12",
     "tailwindcss": "^1.9.6",
