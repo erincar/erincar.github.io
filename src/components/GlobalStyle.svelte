@@ -12,10 +12,10 @@
         @apply overflow-hidden;
 
         /* Appearance */
-        background-color: rgb(72, 72, 72);
+        @apply bg-orange;
 
         /* Typography */
-        @apply text-black text-base leading-normal;
+        @apply text-dark text-base leading-normal;
     }
 
     #sapper {

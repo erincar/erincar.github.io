@@ -24,13 +24,14 @@
         @apply inline-flex flex-grow-0 z-10;
 
         /* Layout */
-        @apply px-20 py-0 justify-between;
+        @apply px-40 py-0 justify-between;
 
         /* Appearance */
-        @apply bg-transparent;
+        @apply bg-dark;
 
         /* Typography */
-        @apply text-4xl text-gray-400;
+        @apply text-2xl text-light;
+        @screen lg { @apply text-4xl; }
     }
 
     ul {
@@ -46,7 +47,7 @@
 
         & > [aria-current] {
             /* Appearance */
-            @apply border-b-2 border-solid border-red-600 border-opacity-75;
+            @apply border-b-2 border-solid border-red border-opacity-75;
         }
     }
 
@@ -58,7 +59,7 @@
         @apply font-medium no-underline;
 
         &:hover {
-            @apply font-normal text-gray-100 text-opacity-100;
+            @apply font-normal text-green text-opacity-100;
         }
     }
 </style>

@@ -29,14 +29,14 @@
 
         @keyframes color-frenzy {
             0%{
-                filter: contrast(80%)
+                filter: contrast(40%)
                 brightness(0.8) invert(100%)
                 hue-rotate(20deg) saturate(0);
             }
             100%{
                 filter: contrast(80%)
-                brightness(0.8) invert(100%)
-                hue-rotate(40deg) saturate(200);
+                brightness(0.8) invert(60%)
+                hue-rotate(36deg) saturate(120);
             }
         }
 
@@ -72,6 +72,6 @@
 </style>
 
 <div class="background-container">
-<div class="background left"><div class="slider"></div></div>
-<div class="background right"><div class="slider"></div></div>
+    <div class="background left"><div class="slider"></div></div>
+    <div class="background right"><div class="slider"></div></div>
 </div>

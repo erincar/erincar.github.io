@@ -24,9 +24,39 @@
     } from '@fortawesome/free-brands-svg-icons';
 
     const external_links = {
+        'itch.io': [
+            'https://itch.io/profile/erincar',
+            faItchIo,
+            true,
+        ],
         'linkedin': [
             'https://www.linkedin.com/in/erincar/',
             faLinkedin,
+        ],
+        'researchgate': [
+            'https://www.researchgate.net/profile/Erinc_Argimak',
+            faResearchgate,
+        ],
+        'medium': [
+            'https://medium.com/@erincar',
+            faMedium,
+        ],
+        'twitter': [
+            'https://twitter.com/yosuntutan',
+            faTwitter,
+        ],
+        'spotify': [
+            'https://open.spotify.com/user/yosuntutan',
+            faSpotify,
+        ],
+        'pinterest': [
+            'https://tr.pinterest.com/erincarg/',
+            faPinterest,
+        ],
+        'soundcloud': [
+            'https://soundcloud.com/yosuntutan/',
+            faSoundcloud,
+            true,
         ],
         'github': [
             'https://github.com/erincar',
@@ -40,30 +70,14 @@
             'https://www.kaggle.com/erincar',
             faKaggle,
         ],
-        'stack overflow': [
-            'https://stackoverflow.com/users/8145608/erincar',
-            faStackOverflow,
-        ],
         'dev.to': [
             'https://dev.to/erincar',
             faDev,
         ],
-        'medium': [
-            'https://medium.com/@erincar',
-            faMedium,
-        ],
-        'researchgate': [
-            'https://www.researchgate.net/profile/Erinc_Argimak',
-            faResearchgate,
+        'stack overflow': [
+            'https://stackoverflow.com/users/8145608/erincar',
+            faStackOverflow,
             true,
-        ],
-        'soundcloud': [
-            'https://soundcloud.com/yosuntutan/',
-            faSoundcloud,
-        ],
-        'itch.io': [
-            'https://itch.io/profile/erincar',
-            faItchIo,
         ],
         'VSCO': [
             'https://vsco.co/yosuntutan/',
@@ -72,10 +86,6 @@
         '500px': [
             'https://500px.com/erincar',
             fa500px,
-        ],
-        'vimeo': [
-            'https://vimeo.com/erincar',
-            faVimeo,
         ],
         'artstation': [
             'https://www.artstation.com/erincar',
@@ -92,19 +102,11 @@
         'behance': [
             'https://www.behance.net/erincar',
             faBehance,
+        ],
+        'vimeo': [
+            'https://vimeo.com/erincar',
+            faVimeo,
             true,
-        ],
-        'twitter': [
-            'https://twitter.com/yosuntutan',
-            faTwitter,
-        ],
-        'spotify': [
-            'https://open.spotify.com/user/yosuntutan',
-            faSpotify,
-        ],
-        'pinterest': [
-            'https://tr.pinterest.com/erincarg/',
-            faPinterest,
         ],
         'steam': [
             'https://steamcommunity.com/id/erincar/',
@@ -121,26 +123,31 @@
         /* Layout */
         @apply px-4 py-0 flex flex-row justify-center;
 
+        /* Appearance */
+        @apply bg-dark;
+
         /* Typography */
-        @apply text-4xl text-gray-400;
+        @apply text-2xl text-light;
+        @screen lg { @apply text-4xl; }
     }
 
     li {
         /* Placement */
-        @apply block float-left h-full;
+        @apply inline-flex flex-col float-left h-full;
 
         /* Layout */
-        @apply px-2 py-1;
+        @apply px-1 py-0;
 
         & > .separator {
-            @apply inline-block mx-3 w-px h-full bg-current;
+            @apply block mx-3 my-auto w-1 bg-current;
+            height: 80%;
         }
     }
 
     a {
 
         &:hover :global(svg) {
-            @apply text-red-600;
+            @apply text-blue;
             @keyframes external-enthusiasm {
                 0%{
                     transform: rotateY(0);
@@ -158,6 +165,7 @@
 
     .custom-svg {
         @apply w-6 h-6 overflow-visible inline-block;
+        @screen lg { @apply w-8 h-8; }
         @apply fill-current;
     }
 </style>

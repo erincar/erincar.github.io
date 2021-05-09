@@ -18,19 +18,22 @@
 - [x] Use icons
 - [x] Color icons on hover
 - [x] Move external links to footer
-  - [ ] Make it collapsible on small screens
 - [ ] Add animations
   - [ ] Section changes
-- [ ] Set & use color theme, font theme
+- [x] Add color theme
+- [ ] Add font theme
 - [ ] Add custom scrollbar
-- [ ] Implement responsive Design
+- [ ] Implement responsive design for mobile
+  - [ ] Collapsible footer
+  - [ ] Bottom navigation
 - [ ] Handle component events
+- [ ] Surprise background
 
 ### Content
 
 - [x] External links
+- [x] Contact links
+- [ ] Sections with Work samples
 - [ ] CV
-- [ ] Work samples
-- [ ] GitHub-hosted blog?
-- [ ] Contact links
-- [ ] Other content
+- [ ] Blog
+
