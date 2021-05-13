@@ -4,6 +4,7 @@
 <style>
     :root {
         --bg-size: calc(100vh/3);
+        --slide-duration: 4s;
     }
 
     .background-container {
@@ -30,13 +31,13 @@
         @keyframes color-frenzy {
             0%{
                 filter: contrast(40%)
-                brightness(0.8) invert(100%)
-                hue-rotate(20deg) saturate(0);
+                brightness(0.8) invert(70%)
+                hue-rotate(20deg) saturate(20);
             }
             100%{
                 filter: contrast(80%)
-                brightness(0.8) invert(60%)
-                hue-rotate(36deg) saturate(120);
+                brightness(0.8) invert(90%)
+                hue-rotate(144deg) saturate(120);
             }
         }
 
@@ -49,8 +50,8 @@
             background: url("90527-dij.jpg") repeat left top;
             background-size: var(--bg-size);
             animation:
-                slide 2s ease-in-out infinite normal,
-                color-frenzy 2s ease infinite alternate;
+                slide var(--slide-duration) ease-in-out infinite normal,
+                color-frenzy var(--slide-duration) ease infinite alternate;
         }
 
         &.left {
@@ -64,8 +65,8 @@
             & > .slider {
                 @apply float-left;
                 animation:
-                    slide 2s ease-in-out infinite reverse,
-                    color-frenzy 2s ease infinite alternate;
+                    slide var(--slide-duration) ease-in-out infinite reverse,
+                    color-frenzy var(--slide-duration) ease infinite alternate;
             }
         }
     }

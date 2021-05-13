@@ -136,10 +136,11 @@
         @apply inline-flex flex-col float-left h-full;
 
         /* Layout */
-        @apply px-1 py-0;
+        @apply px-1 py-1;
 
         & > .separator {
-            @apply block mx-3 my-auto w-1 bg-current;
+            @apply block mx-5 my-auto bg-current;
+            width: 2px;
             height: 80%;
         }
     }
