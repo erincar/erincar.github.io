@@ -1,0 +1,25 @@
+{
+  "name": "erinc.space",
+  "version": "0.1.0",
+  "description": "Erinc's personal portfolio space",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "start": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erincar/erincar.github.io.git"
+  },
+  "author": "Erinc Argimak",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/erincar/erincar.github.io/issues"
+  },
+  "homepage": "https://github.com/erincar/erincar.github.io#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-svelte": "^4.0.8",
+    "svelte": "^3.38.2"
+  }
+}
