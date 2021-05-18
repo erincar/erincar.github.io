@@ -1,8 +1,16 @@
 <script>
-  import Links from './components/Links.svelte'
-  import Landing from './components/Landing.svelte'
-  import Portfolio from './components/Portfolio.svelte'
-  export let name;
+  import { onMount } from 'svelte';
+
+  import Home from './routes/Home.svelte'
+  import Portfolio from './routes/Portfolio.svelte'
+
+  import LiftButton from './components/LiftButton.svelte'
+
+  export let section;
+
+  onMount(async () => {
+    window.location.href = `/#${section}`;
+  });
 </script>
 
 <style>
@@ -40,7 +48,7 @@
 </style>
 
 <main>
-  <Landing/>
+  <Home/>
   <Portfolio/>
+  <LiftButton section={section}/>
 </main>
-<Links/>
