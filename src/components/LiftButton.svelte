@@ -1,9 +1,16 @@
 <script>
   export let section;
+  const icons = {
+    // TODO: Show icons on the lift button
+    home: "up",
+    portfolio: "down",
+  };
+
+  $: otherSection = section === "home" ? "portfolio": "home";
 
   function toggle() {
-    section = window.location.hash === "#home" ? "#portfolio" : "#home";
-    window.location.replace(section);
+    section = otherSection;
+    window.location.replace(`#${section}`);
   }
 </script>
 
@@ -18,4 +25,4 @@
   }
 </style>
 
-<button on:click={toggle}>{section}</button>
+<button on:click={toggle}>{icons[otherSection]}</button>
