@@ -10,26 +10,25 @@
 - [ ] Svelte build & deploy action
 
 ## Content
+- [x] Lift button to navigate between Home/Portfolio
 
-### Landing Page
-Landscape: Show full screen.
-Portrait: One of the nav sections.
+### Home Page
 
-- [ ] Landing text
-- [ ] Landing portrait photograph
-- [ ] Link to portfolio
+- [ ] Home text
+- [ ] Home portrait photograph
 
-### Person Card
-Landscape: Show on the left.
-Portrait: One of the nav sections.
+### Portfolio
+- [x] Implement navigation and full screen pages on mobile
+- [ ] Implement on the same screen for larger devices
+
+#### Person Card
 
 - [ ] Avatar
 - [ ] Short description
 - [ ] External links
+- [ ] Side tabs between description/links on mobile
 
-### Portfolio
-Landscape: Show on the right.
-Portrait: One of the nav sections.
+#### Gallery
 
 - [ ] Tags
   - [ ] Tag Contents (name, description)
@@ -41,3 +40,9 @@ Portrait: One of the nav sections.
   - [ ] Entry List Container
   - [ ] Entry List Element
   - [ ] Entry Detail
+
+#### Bottom Navigation
+
+- [ ] No show on larger screens
+- [ ] Dis/appear animation
+- [ ] Page change animations
