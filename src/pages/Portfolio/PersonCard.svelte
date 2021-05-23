@@ -1,15 +1,15 @@
 <script></script>
 
 <style>
-    .gallery-container {
+  .personcard-container {
     /* Placement */
     @apply w-full h-full;
     /* Layout */
     /* Appearance */
-    @apply bg-green text-dark;
+    @apply bg-black-500 text-white-500;
   }
 </style>
 
-<div class="gallery-container">
-    <h1>Gallery</h1>
+<div class="personcard-container">
+  <h1>PersonCard</h1>
 </div>

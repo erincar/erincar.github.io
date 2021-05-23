@@ -88,7 +88,7 @@
 </script>
 <style>
   div {
-    @apply fixed bottom-0 w-full py-2 bg-red;
+    @apply fixed bottom-0 w-full py-2 bg-pink-500;
   }
   ul {
     @apply flex flex-row justify-center;
@@ -100,7 +100,7 @@
     @apply border-none;
   }
   a {
-    @apply text-dark text-xs;
+    @apply text-black-500 text-xs;
   }
 </style>
 

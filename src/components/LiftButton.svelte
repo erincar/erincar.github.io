@@ -21,7 +21,7 @@
     /* Layout */
     @apply p-3;
     /* Appearance */
-    @apply rounded-full h-12 w-12 bg-dark text-light;
+    @apply rounded-full h-12 w-12 bg-black-500 text-white-500;
   }
 </style>
 

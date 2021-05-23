@@ -1,6 +1,6 @@
 <script>
-  import PersonCard from '../components/PersonCard.svelte'
-  import Gallery from '../components/Gallery.svelte'
+  import PersonCard from './PersonCard.svelte'
+  import Gallery from './Gallery.svelte'
 
   let activeElement = "personcard";
 
@@ -36,7 +36,7 @@
 
   .bottom-navigator {
     @apply h-20 w-full flex flex-row justify-items-stretch;
-    @apply bg-red;
+    @apply bg-pink-500;
   }
 
   .bottom-navigator > button {

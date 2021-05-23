@@ -1,8 +1,8 @@
 <script>
   import { onMount } from 'svelte';
 
-  import Home from './routes/Home.svelte'
-  import Portfolio from './routes/Portfolio.svelte'
+  import Home from './pages/Home/Home.svelte'
+  import Portfolio from './pages/Portfolio/Portfolio.svelte'
 
   import LiftButton from './components/LiftButton.svelte'
 
@@ -29,9 +29,9 @@
     /* Layout */
     @apply overflow-hidden;
     /* Appearance */
-    @apply bg-orange;
+    @apply bg-yellow-500;
     /* Typography */
-    @apply text-dark text-base leading-normal;
+    @apply text-black-500 text-base leading-normal;
   }
 
   main {
