@@ -1,0 +1,15 @@
+name: SvelteKit Publish
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: erincar/sveltekit-to-github-pages@e0305f899994776d70b9dc98aa0623420c8f34ed
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
