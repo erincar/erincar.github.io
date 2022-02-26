@@ -2,7 +2,6 @@
   "name": "erinc.space",
   "version": "0.1.0",
   "description": "Erinc's personal portfolio space",
-  "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html"
@@ -17,14 +16,17 @@
     "url": "https://github.com/erincar/erincar.github.io/issues"
   },
   "homepage": "https://github.com/erincar/erincar.github.io#readme",
+  "dependencies": {
+    "svelte": "^3.44.1",
+    "svelte-routing": "^1.6.0"
+  },
   "devDependencies": {
-    "autoprefixer": "^10.3.5",
+    "autoprefixer": "^10.4.0",
     "cssnano": "^4.1.11",
-    "parcel": "^2.0.0-rc.0",
+    "parcel": "^2.0.1",
     "parcel-plugin-svelte": "^4.0.9",
-    "parcel-transformer-svelte": "^1.1.2",
-    "postcss": "^8.3.8",
-    "svelte": "^3.43.0",
-    "tailwindcss": "^2.2.15"
+    "parcel-transformer-svelte": "^1.2.3",
+    "postcss": "^8.3.11",
+    "tailwindcss": "^2.2.19"
   }
 }
