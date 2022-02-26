@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: erincar/sveltekit-to-github-pages@e0305f899994776d70b9dc98aa0623420c8f34ed
+      - uses: erincar/sveltekit-to-github-pages@23239a77b488a6bd2fac64a82b24f72c88049d75
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
