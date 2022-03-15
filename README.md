@@ -17,6 +17,7 @@ This page is being built.
 ## Visuals
 
 - [ ] Page design & styles (Mobile/Tablet/Desktop)
+  - [ ] Font, typography
   - [ ] Color theme
   - [ ] Components
   - [ ] Animations, transitions
@@ -27,4 +28,4 @@ This page is being built.
 
 - [ ] Pre-commit hooks
 - [ ] TailwindCSS attribute organizer (Placement, Layout, Appearance, Typography)
-- [ ] PostCSS plugins: `nesting` etc.
+- [ ] Fix nested @apply commands with screen prefix, e.g. `sm:text-6xl`
