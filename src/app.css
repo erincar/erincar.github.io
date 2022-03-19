@@ -9,7 +9,7 @@ body {
 	/* Layout */
 	@apply overflow-hidden;
 	/* Appearance */
-	@apply bg-orange-100;
+	@apply bg-orange-200;
 	/* Typography */
-	@apply text-blue-700 text-base leading-normal;
+	@apply text-blue-800 text-base leading-normal;
 }
