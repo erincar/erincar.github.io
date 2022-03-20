@@ -2,7 +2,7 @@
 	export let url, icon_url;
 </script>
 
-<a href={url}>
+<a href={url} target="”_blank”">
 	<svg class="w-8 h-8">
 		<image xlink:href={icon_url} class="w-8 h-8" />
 	</svg>
