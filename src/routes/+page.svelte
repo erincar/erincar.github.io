@@ -1,2 +1,1 @@
-<h1>erinc.space</h1>
-<p>A fresh start</p>
+<h1>yes, erinc.space.</h1>
