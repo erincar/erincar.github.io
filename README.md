@@ -13,10 +13,14 @@ yes, this page is being built.
 - [ ] External Links (with icons)
 - [ ] Personal Statement
 - [ ] Portfolio Projects
+- [ ] Blog posts
+- [ ] CV
 
 ## Visuals
 
 - [ ] Page design & styles (Mobile/Tablet/Desktop)
+  - [ ] Find content breakpoints, align to screen sizes
+    - [ ] Find solutions for all screen sizes
   - [ ] Font, typography
   - [ ] Color theme
   - [ ] Components
@@ -30,6 +34,8 @@ yes, this page is being built.
 - [x] Add TailwindCSS, Nesting, PostCSS
 - [ ] TailwindCSS attribute organizer (Placement, Layout, Appearance, Typography)
 - [ ] Fix nested @apply commands with screen prefix, e.g. `sm:text-6xl`
+- [ ] Global Types
+- [ ] `components/index.js` for exporting components with names?
 
 ## Workflow
 
