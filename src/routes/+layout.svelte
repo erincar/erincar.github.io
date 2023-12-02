@@ -36,21 +36,21 @@
 		}
 	}
 
-    main {
+	main {
 		/* Placement */
 		/* Layout */
 		/* Appearance */
 		/* Typography */
-        @apply text-8xl;
-    }
+		@apply text-8xl;
+	}
 
 	footer {
 		/* Placement */
-        @apply absolute bottom-0 w-full;
+		@apply absolute bottom-0 w-full;
 		/* Layout */
-        @apply py-6;
+		@apply py-6;
 		/* Appearance */
-        @apply bg-emerald-500;
+		@apply bg-emerald-500;
 		/* Typography */
 	}
 </style>
