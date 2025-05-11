@@ -1,0 +1,22 @@
+name: Publish SvelteKit Page
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - name: Build SvelteKit Static Page
+        working-directory: ./web-client
+        run: bun install && bun run build
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: release
+          publish_dir: ./web-client/build
+          cname: erinc.space
