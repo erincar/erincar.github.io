@@ -1,7 +1,14 @@
 <script lang="ts">
 	import '../app.css';
+	import RouteBox from '$lib/RouteBox.svelte';
 
-	let { children } = $props();
+	let { data, children } = $props();
 </script>
 
-{@render children()}
+<RouteBox routemap={data.sitemap}>
+	{@render children()}
+</RouteBox>
+
+<style lang="postcss">
+	@reference "../app.css";
+</style>

@@ -1,8 +1,8 @@
 <script lang="ts">
 </script>
 
-<h1>erinc.space</h1>
+<h1>works.main</h1>
 
 <style lang="postcss">
-	@reference "../app.css";
+	@reference "../../app.css";
 </style>

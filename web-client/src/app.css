@@ -1,3 +1,16 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+* {
+	@apply m-0 p-0;
+}
+
+html {
+	@apply scroll-smooth;
+}
+
+body {
+	@apply h-dvh w-dvw overflow-hidden;
+    @apply text-base sm:text-2xl lg:text-4xl;
+}

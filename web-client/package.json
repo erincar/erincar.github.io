@@ -5,6 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
+		"dev-lan": "vite dev --host $(ifconfig | sed -nE 's/.*inet ([0-9.]+).*/\\1/p' | grep -v '127.0.0.1')",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
