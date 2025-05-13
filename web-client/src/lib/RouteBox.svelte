@@ -43,18 +43,21 @@
 		@apply h-full w-full;
 		@apply flex flex-col-reverse md:flex-col;
 		& > * {
-			@apply box-border border border-l-8;
+			@apply box-border border border-l-12;
 		}
 	}
 
 	header {
-		@apply flex flex-row justify-between px-1;
-		& > nav.current {
-		}
-
-		& > nav.subroutes {
-			@apply flex flex-row items-end gap-4;
-		}
+		@apply flex flex-row justify-between p-1;
+        & > nav {
+            @apply flex flex-row gap-1 sm:gap-4;
+            &.current {
+                @apply font-bold;
+            }
+            &.subroutes {
+                @apply items-end;
+            }
+        }
 	}
 
 	main {

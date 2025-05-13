@@ -12,5 +12,12 @@ html {
 
 body {
 	@apply h-dvh w-dvw overflow-hidden;
-    @apply text-base sm:text-2xl lg:text-4xl;
+	@apply text-base sm:text-2xl lg:text-4xl;
+}
+
+a {
+    & > div {
+        @apply px-1 leading-none;
+        @apply border-l-4 border-indigo-700 bg-indigo-100;
+    }
 }
